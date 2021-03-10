@@ -77,6 +77,97 @@ const products = [
       'rating': 4,
       'numReviews': 12,
     },
+    {
+      '_id': '7',
+      'name': 'Simples elegante Blusa 01',
+      'image': '/images/blusa01.jpg',
+      'description':
+        'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+      'brand': 'Amazon',
+      'category': 'Electronics',
+      'price': 29.99,
+      'countInStock': 0,
+      'rating': 4,
+      'numReviews': 12,
+    },
+    {
+      '_id': '8',
+      'name': 'Simples elegante Blusa 02',
+      'image': '/images/blusa02.jpg',
+      'description':
+        'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+      'brand': 'Amazon',
+      'category': 'Electronics',
+      'price': 29.99,
+      'countInStock': 0,
+      'rating': 4,
+      'numReviews': 12,
+    },
+    {
+      '_id': '9',
+      'name': 'Simples elegante Blusa 03',
+      'image': '/images/blusa03.jpg',
+      'description':
+        'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+      'brand': 'Amazon',
+      'category': 'Electronics',
+      'price': 29.99,
+      'countInStock': 0,
+      'rating': 4,
+      'numReviews': 12,
+    },
+    {
+      '_id': '10',
+      'name': 'Simples elegante Blusa 04',
+      'image': '/images/blusa04.jpg',
+      'description':
+        'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+      'brand': 'Amazon',
+      'category': 'Electronics',
+      'price': 29.99,
+      'countInStock': 10,
+      'rating': 4,
+      'numReviews': 12,
+    },
+    {
+      '_id': '11',
+      'name': 'Simples elegante Blusa 05',
+      'image': '/images/blusa05.jpg',
+      'description':
+        'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+      'brand': 'Amazon',
+      'category': 'Electronics',
+      'price': 29.99,
+      'countInStock': 10,
+      'rating': 4,
+      'numReviews': 12,
+    },
+    {
+      '_id': '12',
+      'name': 'Simples elegante Blusa 06',
+      'image': '/images/blusa06.jpg',
+      'description':
+        'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+      'brand': 'Amazon',
+      'category': 'Electronics',
+      'price': 29.99,
+      'countInStock': 10,
+      'rating': 4,
+      'numReviews': 12,
+    },
+    {
+      '_id': '13',
+      'name': 'Simples elegante Blusa 07',
+      'image': '/images/blusa07.jpg',
+      'description':
+        'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+      'brand': 'Amazon',
+      'category': 'Electronics',
+      'price': 29.99,
+      'countInStock': 10,
+      'rating': 4,
+      'numReviews': 12,
+    }
   ]
   
   
