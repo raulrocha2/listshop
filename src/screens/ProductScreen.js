@@ -51,6 +51,23 @@ function ProductScreen({ match }) {
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
+                            {product.countInStock > 0 && (
+
+                                <ListGroup.Item>
+                                    <Row>
+                                        <Col>Qtd</Col>
+                                        <Col xs='auto' className='my-1'>
+                                            <Form.Control
+                                                as="select"
+                                                value={product.countInStock}
+                                                onChange={product.countInStock.lenght}
+                                                >
+
+                                            </Form.Control>
+                                        </Col>
+                                    </Row>
+                                </ListGroup.Item>
+                            )}
                             <ListGroup.Item>
                                 <Button className='btn-block' disabled={product.countInStock == 0} type='button'>Adicionar</Button>
                             </ListGroup.Item>
