@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Row, Col, Image, ListGroup, Button, Card, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Rating from '../components/Rating'
-import products from '../products'
+import axios from 'axios'
+
 
 function ProductScreen({ match }) {
+    const [product, setProduct ] = useState([])
 
-    const product = products.find((p) => p._id == match.params.id)
+
+    useEffect(() => {
+        console.log('useEffect Disparado')
+        
+        async function fetchProduct() {
+            const {data} = await axios.get(`http://127.0.0.1:8000/api/products/${match.params.id}`)
+            setProduct(data)
+
+        }
+
+        fetchProduct()
+        
+    }, [])
+    
+    
 
     return (
         <div>

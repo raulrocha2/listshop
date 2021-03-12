@@ -16,7 +16,7 @@ function Product({ product }) {
                         
                     </Card.Title>
                 </Link>
-                <Button className='btn-block' disabled={product.countInStock == 0} type='button' size='sm'>Adicionar</Button>
+                <Button className='btn-block' disabled={product.countInStock === 0} type='button' size='sm'>Adicionar</Button>
                 <Card.Text as="div">
                     <div className="my-3">
                         <Rating value={product.rating} text={`${product.numReviews} vizualizações`} color={'#f8e825'} />
