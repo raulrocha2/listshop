@@ -1,11 +1,24 @@
 import { Container } from 'react-bootstrap'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
+import ProductListScreen from './screens/ProductListScreen'
+import ProductEditScreen from './screens/ProductEditScreen'
+import ProductCategoryScreen from './screens/ProductCategoryScreen'
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
+import ProfileScreen from './screens/ProfileScreen'
+import UserListSreen from './screens/UserListSreen'
+import UserEditScreen from './screens/UserEditScreen'
+import CartScreen from './screens/CartScreen'
+import ShippingScreen from './screens/ShippingScreen'
+import PaymentScreen from './screens/PaymentScreen'
+import PlaceOrderScreen from './screens/PlaceOrderScreen'
+import OrderScreen from './screens/OrderScreen'
+import OrderListScreen from './screens/OrderListScreen'
+
 
 function App() {
   return (
@@ -15,9 +28,21 @@ function App() {
       <main className="mx-auto">
         <Container>
           <Route path='/' component={HomeScreen} exact/>
+          <Route path='/cart/:id?' component={CartScreen} />
           <Route path='/product/:id' component={ProductScreen}/>
+          <Route path='/admin/productlist' component={ProductListScreen} />
+          <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
           <Route path='/login' component={LoginScreen} />
           <Route path='/register' component={RegisterScreen} />
+          <Route path='/profile' component={ProfileScreen} />
+          <Route path='/shipping' component={ShippingScreen} />
+          <Route path='/payment' component={PaymentScreen} />
+          <Route path='/placeorder' component={PlaceOrderScreen} />
+          <Route path='/order/:id' component={OrderScreen} />
+          <Route path='/admin/orderlist' component={OrderListScreen} />
+          <Route path='/admin/userlist' component={UserListSreen} />
+          <Route path='/admin/user/:id/edit' component={UserEditScreen} /> 
+          <Route path='/category/:category' component={ProductCategoryScreen} />
         </Container>
       </main>  
       <Footer />

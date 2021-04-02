@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Card, Button } from 'react-bootstrap'
 import Rating from './Rating'
 import { Link } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
+
 
 function Product({ product }) {
+
+    const [qty, setQty] = useState(1)
+
+    const history = useHistory();
+
+    const addToCartHandler = () => {
+        history.push(`/cart/${product._id}?qty=${qty}`)
+    }
+
     return (
         <Card className="my-3 p-3 rounded">
             <Link to={`/product/${product._id}`}>
@@ -16,7 +27,12 @@ function Product({ product }) {
                         
                     </Card.Title>
                 </Link>
-                <Button className='btn-block' disabled={product.countInStock === 0} type='button' size='sm'>Adicionar</Button>
+                <Button 
+                onClick={addToCartHandler}
+                className='btn-block' 
+                disabled={product.countInStock === 0} 
+                type='button' size='sm'>Adicionar
+                </Button>
                 <Card.Text as="div">
                     <div className="my-3">
                         <Rating value={product.rating} text={`${product.numReviews} vizualizações`} color={'#f8e825'} />
